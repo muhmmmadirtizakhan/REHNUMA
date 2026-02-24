@@ -1,0 +1,4 @@
+# .gitignore file create karo
+echo "node_modules/" > .gitignore
+echo ".env" >> .gitignore
+echo ".vercel" >> .gitignore
