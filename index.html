@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <link rel="shortcut icon" href="https://cdn-icons-png.freepik.com/512/10063/10063451.png" type="image/png">
+    <title>Rehnuma - Premium AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header with Hamburger Menu -->
+        <div class="chat-header">
+            <div class="bot-profile">
+                <div class="bot-img">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Bot">
+                    <span class="status-badge">● ONLINE</span>
+                </div>
+                <div class="bot-info">
+                    <h1>Rehnuma</h1>
+                    <p>Powered by Gemini 2.5 Flash</p>
+                </div>
+            </div>
+            <div class="hamburger" id="hamburgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu with Download Chat Button -->
+        <div class="mobile-nav" id="mobileMenu">
+            <div class="model-badge">✨ GEMINI 2.5 FLASH</div>
+            <button id="downloadChatBtn">
+                <i class="fas fa-download"></i> Download Chat
+            </button>
+            <button id="resetChatBtn">
+                <i class="fas fa-redo-alt"></i> Reset Conversation
+            </button>
+            <button id="infoBtn">
+                <i class="fas fa-info-circle"></i> About Rehnuma
+            </button>
+        </div>
+
+        <!-- Chat Body -->
+        <div class="chat-body" id="chatBox">
+            <div class="message bot-msg">
+                <div class="avatar"><img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="Bot"></div>
+                <div class="text-bubble">
+                    <p>✨ Hello! I'm Rehnuma — your premium AI assistant powered by Gemini 2.5 Flash.</p>
+                    <p><strong>I Support:</strong><br>
+                    • Full assistant capabilities<br>
+                    • CV writing assistance<br>
+                    • Guide about admissions, opportunities and scholarships<br>
+                    • Markdown formatting<br>
+                    • Code syntax highlighting</p>
+                    <p>How can I help you today?</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Footer -->
+        <div class="chat-footer">
+            <div class="input-wrapper">
+                <button class="action-btn"><i class="fa-regular fa-face-smile"></i></button>
+                <input type="text" id="userInput" placeholder="Type your message here..." autocomplete="off">
+                <button class="send-btn" id="sendMessageBtn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal -->
+    <div class="info-modal" id="infoModal">
+        <div class="info-content">
+            <h2>✦ ABOUT REHNUMA ✦</h2>
+            <p><strong>REHNUMA Premium</strong> is a luxury AI chat interface powered by Google's Gemini 2.5 Flash model.</p>
+            <p>✨ <strong>Features:</strong><br>
+            • Full Markdown formatting<br>
+            • Code syntax highlighting<br>
+            • Guide about admissions, opportunities and scholarships<br>
+            • Full-screen desktop experience<br>
+            • Real-time AI responses<br>
+            • CV writing assistance<br>
+            • Download chat history</p>
+            <p><em>Version 2.0 · Premium Edition</em></p>
+            <button id="closeInfoBtn">CLOSE</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
