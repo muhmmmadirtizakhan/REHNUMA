@@ -15,7 +15,7 @@ if (!API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY || 'dummy-key');
-const MODEL_NAME = "gemini-1.5-flash"; // Using stable version
+const MODEL_NAME = "gemini-2.5-flash"; // Using stable version
 
 // Middleware
 app.use(cors());
